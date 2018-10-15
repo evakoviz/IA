@@ -1,0 +1,400 @@
+A _____ attack involves trying every possible key until an intelligible translation of the ciphertext is obtained. | brute-force
+A _____ cipher is one in which a block of plaintext is treated as a whole and used to produce a ciphertext block of equal length. | block
+A ______ is a cryptographic algorithm that uses two related keys, a public key and a private key.  The two keys have the property that deriving the private key from the public key is computationally infeasible. | Public Key (Asymmetric) Cryptographic Algorithm
+A ______ uses a nondeterministic source to produce randomness | TRNG
+A _______ is an algorithm that requires the use of a secret key. | MAC
+A _______ is used to produce a pseudorandom string of bits of some fixed length. | PRF
+A _______ is where the attacker determines the user's private key. | total break
+A _______ takes as input a source that is effectively random. | TRNG
+A ________ accepts a variable length block of data as input and produces a fixed size hash value  h = H(M) | hash function 
+A ________ is an algorithm for which it is computationally infeasible to find either (a) a data object that maps to a pre-specified hash result or (b) two data objects that map to the same hash result | cryptographic hash function 
+A _________ attack exploits the fact that an encryption or decryption algorithm often takes slightly different amounts of time on different inputs. |          timing
+A _________ is an encryption/decryption scheme in which a block of plaintext is treated as a whole and used to produce a ciphertext block of equal length. |          block cipher
+A __________ cipher can operate in real time and eliminates the need to pad a message to be an integral number of blocks. |          stream
+A __________ cipher is one that encrypts a digital data stream one bit or one byte at a time. | stream
+A __________ is a set in which you can do addition, subtraction, multiplication and division without leaving the set. | field
+A __________ is a symmetric encryption algorithm in which ciphertext output is produced bit-by-bit or byte-by-byte from a stream of plaintext input. |          stream cipher
+A __________ is a technique for enhancing the effect of a cryptographic algorithm or adapting the algorithm for an application, such as applying a block cipher to a sequence of data blocks or a data stream. |          mode of operation
+A change in one bit of the plaintext or one bit of the key should produce a change in many bits of the ciphertext. This is referred to as the __________ effect. |          avalanche
+A fundamental requirement of the RSA public-key encryption scheme is the ability to generate _________ numbers. |          prime
+A hash function that satisfies the properties of variable input size, fixed output size, efficiency, preimage resistant and second preimage resistant is referred to as a ______. | weak hash function 
+A major advance in symmetric cryptography occurred with the development of the rotor encryption/decryption machine. | T
+A more efficient implementation can be achieved for a 32-bit processor if operations are defined on _________ words. |          32-bit
+A polynomial m(x) is called __________ if and only if m(x) cannot be expressed as a product of two polynomials, both of degree lower than that of m(x). |          irreducible
+A pseudorandom number generator takes as input a fixed value called the ______ and produces a sequence of output bits using a deterministic algorithm | seed
+A public-key encryption scheme has ________ ingredients | six
+A public-key encryption scheme is not vulnerable to a brute-force attack | F
+A secret key for symmetric encryption that is generated for use for a short period of time is called a ______ | session key
+A sequence of plaintext elements is replaced by a _______ of that sequence which means that no elements are added, deleted or replaced in the sequence, but rather the order in which the elements appear in the sequence is changed. | permutation
+A source that is effectively random is referred to as a(n) __________ . | entropy source
+A stream of pseudorandom numbers should exhibit two forms of unpredictability: forward and __________ . |          backward
+A technique referred to as a _____ is a mapping achieved by performing some sort of permutation on the plaintext letters. | transposition cipher
+A trap-door one-way function is easy to calculate in one direction and infeasible to calculate in the other direction unless certain additional information is known. | T
+A way to improve on the simple monoalphabetic technique is to use different monoalphabetic substitutions as one proceeds through the plaintext message. The general name for this approach is ______ | polyalphabetic substitution cipher
+A(n) _______ is defined by an equation in two variables with coefficients. | elliptic curve 
+AES processes the entire data block as a single matrix during each round using __________ and permutation. |          substitutions
+Additional features crypto libraries (usually) provide |  1. Support for protocol implementations
+Advantages of stream ciphers |  -Very efficient: fast and requires small memory. 
+Allowing for the maximum number of possible encryption mappings from the plaintext block is referred to by Feistel as the ______ | ideal block cipher
+An algorithm that is used to produce an open-ended sequence of bits is referred to as a ___________ . |          pseudorandom number generator (PRNG)
+An example of a finite field is the set Zp consisting of all the integers {0, 1, . . . , p - 1}, where p is a __________ and in which arithmetic is carried out modulo p. |          prime number
+An example of a technique that uses S-boxes that are both random and key dependent is ___________ , which starts with S-boxes filled with pseudorandom digits and then alters the contents using the key. |          Blowfish
+An eyption/decryption system requires a point G and an elliptic group _______ as parameters. | Eq(a,b) 
+An ideal hash algorithm will require a cryptanalytic effort _______ the brute-force effort. | less than 
+An original intelligible message fed into the algorithm as input is known as _____, while the coded message produced as output is called the _______ | plaintext, ciphertext
+Another important mode, XTS-AES, has been standardized by the ________ Security in Storage Working Group. | IEEE
+As with ElGamal encryption, the global elements of __________ are a prime number q and a, which is a primitive root of q | ElGamal digital signature
+Asymmetric algorithms rely on one key for encryption and a different but related key for decryption.  | T
+Asymmetric encryption can be used for ______ | both confidentiality and authentication
+Asymmetric encryption can be used for confidentiality but not for authentication | F
+Asymmetric encryption is also known as ________ | public-key encryption
+Asymmetric encryption transforms plaintext into ciphertext.  |  T
+Asymmetric encryption utilizes only a public key for encryption and decryption. | F
+Attack models against MAC functions |  1. Known message-MAC pairs
+Attack models against block ciphers |  1. Ciphertext-only
+Attack models against digital signature schemes? |  1. Key-only attack/2. Known-message attack/3. Chosen-message attack. 
+Attacks against CBC |  1. Padding oracle attack
+Authenticated encryption, and how to achieve? |  -Simultaneously protect confidentiality and integirty of a message
+Because of the opportunities for parallel execution in _______ mode, processors that support parallel features, such as aggressive pipelining, multiple instruction dispatch per clock cycle, a large number of registers, and SIMD instructions can be effectively utilized | CTR
+Before the application of the public-key cryptosystem each participant must generate a pair of keys | T
+Birthday Paradox |  -Expect a repeat after sqrt(N) selections
+Block cipher |  Processess the input block of elements at a time, producing an output block for each input block
+Both _______ produce output that is independent of both the plaintext and the ciphertext.  This makes them natural candidates for stream ciphers that encrypt plaintext by XOR one full block at a time | OFB and CTR
+CBC |  -Requires IV to be unpredictable and un-modifiable
+CFB |  -Requires IV to be unpredictable a
+CTR |  -No error propagation
+Chosen Ciphertext |  Encryption Algorithm
+Ciphertext only |  Encryption algorithm
+Ciphertext |  The scrambled message produced as output. It depends on the plaintext and the secret key. For a given message, two different keys will produce two different ciphertexts
+Confidentiality can be provided by performing message encryption _______ the MAC algorithm. | before or after
+Cryptanalysis |  Process of attempting to discover the plaintext or key
+Cryptographic systems are generically classified along three indendent dimensions |  1) the type of operations used for transforming plaintext to ciphertext (Substitution, transposition)
+DES exhibits the classic _______  block cipher structure, which consists of a number of identical rounds of processing. | Feistel
+Decision criteria when choosing a particular block cipher |  1. Design assumptions vs. application requirements
+Decryption Algorithm |  Essentially the encryption algorithm run in reverse. Takes the ciphertext and the same secret key and produce the original text.
+Design objectives of key exchange protocols |  1. Effectiveness
+Desired security properties of MAC functions? |  1. Key non-recovery/2. Computation resistance.
+Digital Envelope |  Hybrid approach: Secret (symmetric) key and public key encryption. 
+Digital signature scheme |  Mathematical scheme that demonstrates the authenticity of a digital message
+Disadvantages of one-time pad |  1. Large key size/2. Impractical to send key secretly.
+Division requires that each nonzero element have a(n) ________ inverse. | multiplicative
+ECB |  -Encrypts plaintext with the same key-->no randomization
+Each block of plaintext is XORed with an encrypted counter.  The counter is incremented for each subsequent block", is a description of ______ mode | Counter
+Encryption Algorithm |  Performs various substitutions and transformations on the plaintext
+Essential elements contained in a public key certificate? |  1. Subject name and ID infor/2. CA that issued the certificate/3. User's public key/4. CA's digital signature.
+FIPS 140-2 |  -U.S. standard for certification of crypto implementation maintained and published by NIST
+Feistel proposed that we can approximate the ideal block cipher by utilizing the concept of a _____ cipher, which is the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stronger than any of the component ciphers. | product
+Five modes of operation have been standardized by NIST for use with symmetric block ciphers such as DES and AES: electronic codebook mode, cipher block chaining mode, cipher feedback mode, __________, and counter mode. |          output feedback mode (OFB)
+Flaws in WEP |  1. Authentication is only one-way
+For a _______ defined over GF(2m), the variables and coefficients all take on values in GF(2m) and in calculations are performed over GF(2m). | binary curve 
+For cryptography the variables and coefficients are restricted to elements in a  ________ field. | finite
+Give three examples of crypto libraries! |  1. Windows: .NET framework, multiple native APIs
+Given a hash function H, with n possible outputs and a specific value H(x), if H is applied to k random inputs, what must be the value of k so that the probability that at least one input y satisfies H(y) = H(x) is 0.5?" is a reference to the ______ | birthday attack
+Hardware efficiency, software efficiency, preprocessing, random access, provable security, and simplicity are all advantages of __________ mode. |          Counter
+Hash function |  Function that maps arbitrarily long messages into a fixed length output. 
+Hash-and-sign paradigm |  Public/private key operations are slow, so sign the hash of the message (instead of the message itself) to increase efficiency
+How are ciphersuites handled in TLS Handshake? |  -client_hello: client lists the cipher suites is supports, ordered by preference
+How are circuits established in the Tor network? |  -Established incrementally in a "telescoping"manner:
+How are connection keys derived from session master secret? |  Pseudo-random function (uses master_secret and term "key expansion"). 
+How are hidden services implemented in Tor? |  ?. 
+How are key derived after authentication for WPA? |  Successful authentication --> creates session key between mobile device and authentication server. 
+How are private keys protected? |  Typically stored in a tamper resistance hardware module (ex. SMARTcard) or encrypted file within a computer. 
+How are the WPA protocols stacked on each other? |  TLS
+How can MIXes be implemented with public key crypto? |  -Each MIX has an RSA key pair
+How can key pairs be generated? |  1. On key owner's system (preferable for digital signature keys; easier to prove non-repudiation as keys never leave key owner's system)
+How can privacy be defined? |  The right of an individual to (known and) control how information about him/her is collected, stored, and shared. 
+How can technical solutions be useful in privacy protection? |  Encryption and access control techniques and anonymous communication techniques --> privacy enhanceing technologies. 
+How do block ciphers work? |  -Function that is an invertible mapping
+How do synchronous stream ciphers work? |  Simulate the random key stream of the one-time pad with a psuedo-random sequence generated from a random seed. 
+How does an anonymizing proxy work? |  Application level proxy that relays messages back and forth between a user and service provider.. 
+How does authentication work in WPA/WPA2? |  -Three "players": supplicant, authentication server, authenticator
+How does exhaustive key search work? |  1. Try a candidate key K' to decrypt Y. 
+How does sending information back and forth on a circuit work? |  -Data is sent in relay cells
+How does the Fortuna PRNG work? |  Accumulate entropy from as many different sources as possible, and re-seed occasionally.. 
+How does the Tor network work in a nutshell? (components, connections, basic operation) |  -Users run an OP locally, which establishes virtual circuits across the network
+How is the certificate issued? |  -Signed by a signing device using CA's digital signature
+How is the server authenticated in TLS Handshake? |  Server sends its certificate in phase 2 (though, optional for anonymous DH). 
+How were the weaknesses of WEP addressed in WPA? |  1. IV is used as a replay counter
+If a secret key is to be used as a _________ for conventional encryption a single number must be generated. | session key 
+If both sender and receiver use the same key, the system is referred to as: | conventional encryption
+If the algorithm is good the resulting sequences will pass many reasonable tests of randomness. These numbers are referred to as ___________ numbers. |          pseudorandom
+If the authenticator is encrypted with the sender's private key, it serves as a signature that verifies origin, content, and sequencing | T
+If three points on an elliptic curve lie on a straight line their sum is ________ | 0
+In AES, the arithmetic operations of addition, multiplication and division are performed over the finite field _________ | GF(2^8)
+In Advanced Encryption Standard all operations are performed on __________ bytes. | 8-bit
+In ___________ the statistical structure of the plaintext is dissipated into long-range statistics of the ciphertext. This is achieved by having each plaintext digit affect the value of many ciphertext digits. |          diffusion
+In a stream cipher structure a key is input to a pseudorandom bit generator that produces a stream of 8-bit numbers that are apparently random. The output of the generator, called a ___________ , is combined one byte at a time with the plaintext stream using the bitwise exclusive-OR operation. |          keystream
+In key distribution and reciprocal authentication schemes two communicating parties cooperate by exchanging messages to distribute keys and/or authenticate each other.  In many cases ___________ are used for handshaking to prevent replay attacks. | nonces
+In the AES structure both encryption and decryption ciphers begin with a(n) __________ stage, followed by nine rounds that each include all four stages, followed by a tenth round of three stages. | AddRoundKey
+In the AddRoundKey transformation the 128 bits of State are bitwise XORed with the _________ of the round key. | 128 bits
+In the _______ approach only the sender knows the private key so only the sender could have produced a valid signature | RSA
+In the digital signature algorithm the user's _______ is represented by x, which is a random or pseudorandom integer with 0 < x < q. | public key
+In the first instance of multiple encryption plaintext is converted to _____ using the encryption algorithm. | ciphertext
+In the general structure of the AES encryption process the input to the encryption and decryption algorithms is a single _________ block. | 128-bit
+Included in the definition of an elliptic curve is a single element denoted O and called the point at infinity or the _______ | zero point 
+Input is processed s bits at a time. Preceding ciphertext is used as input to the encryption algorithm to produce pseudorandom output, which is XORed with plaintext to produce next unit of ciphertext", is a description of the _________ mode of operation. |          Cipher Feedback (CFB)
+Insertion of messages into the network from a fraudulent source is a _______ attack. | masquerade
+Joseph Mauborgne proposed an improvement to the Vernam cipher that uses a random key that is as long as the message so that the key does not need to be repeated. | 	One-time pad
+KNOW CHOP CHOP |  On average, after 128 trials, you have a correct value for L. 
+Kerkhoff Principle |  Security of the system should be independent of the secrecy of the algorithm. 
+Kerkhoff's principle |  There are two requirements for secure use of symmetric encryption.
+Key sizes of ______ or less are now considered to be inadequate | 32 bits
+Known Plaintext |  Encryption algorithm
+MAC function |  -Maps an arbitrarily long message and key into a fixed length output
+Main security objectives of WEP |  Goal: make WiFi network at least as secure as a wired LAN
+Main security problems in wireless networks |  1. No inherent physical protection
+Many block ciphers have a __________ structure which consists of a number of identical rounds of processing and in each round a substitution is performed on one half of the data being processed, followed by a permutation that interchanges the two halves. |          Feistel
+Message authentication is achieved using a ______ | MAC
+Methods for providing key freshness? |  1. Timestamps
+Mister and Adams proposed that all linear combinations of S-box columns should be _____  which are a special class of Boolean functions that are highly nonlinear according to certain mathematical criteria. | bent functions
+Much of the theory of public-key cryptosystems is based on number theory. | T
+Number of keys used |  Both sender and receiver use the same key, the system is referred to as symmetric, single-key, secret key, or conventional encryption.
+OFB |  -Requires IV to be unpredictable a
+One of the most intense areas of research in the field of symmetric block ciphers is ____ design. | S-box
+One of the most widely used multiple-encryption scheme is __________ . |          triple DES
+Operating systems typically provide a built-in mechanism for generating random numbers. For example, __________ uses mouse and keyboard activity, disk I/O operations, and specific interrupts. |          Linux
+Padding schemes |  1. Append x01 byte, and then as many x00 bytes as needed
+Phases of TLS Handshake |  1. Hello messages: negotiates session ID, and key exchange, MAC and encryption algorithms
+Plaintext is recovered from the ciphertext using the paired key and a _______ | decryption algorithm 
+Plaintext is transformed into ciphertext using two keys and a decryptionalgorithm. | F
+Plaintext |  The original message or data that is fed into the algorithm as input
+Principle of explicitness |  Interpretation of messages should NOT depend on context information, but solely on content of messagesSc. 
+Public-key algorithms are based on ______ | mathematical functions
+Public-key encryption is also known as ________ | asymmetric encryption
+Public-key encryption is more secure from cryptanalysis than symmetric encryption. | F
+Release of message contents to any person or process not possessing the appropriate cryptographic key" is a ______ attack. | disclosure
+Restoring the plaintext from the ciphertext is _____ | deciphering
+Role of change_cipher_spec? |  Triggers state change, where parties should begin using the newly negotiated algorithms and parameters in their messages. 
+Role of finished message, and how are they constructed? |  -Used to authenticate all previous handshake messages, as it's the first message sent as the hash (uses new schemes) of all previous messages
+Rotor machines are sophisticated precomputer hardware devices that use substitution techniques. | T
+SHA-1 produces a hash value of _______ bits | 160
+Secret key |  The secret key is also input to the algorithm. The exact substitutions and transformations performed by the algorithm depend on the key
+Semantic Security |  Knowledge of the ciphertext does not reveal any additional information about the message that can be feasibly extracted.
+Similar to the generic attack, except that the list of messages to be signed is chosen after the attacker knows the user's public key but before any signatures are seen, is the ______ attack | directed chosen
+Stream cipher |  processes the input elements continously, producing one element at a time, as it goes along.
+Substitution |  In which each element in the plaintext is mapped to another element
+Symmetric encryption is a form of cryptosystem in which encryption and decryption are performedusing different keys. It is also known as non-conventional encryption | F
+Symmetric encryption remains by far the most widely used of the two types of encryption. | T
+Symmetric encryption scheme ingredients |  Plaintext.
+TCP/IP network stack |  Handshake Change Cipher Spec Alert Applications
+TLS sessions and connections |  -Session: security association between a client and a server. Sessions are stateful and include a master secret (Handshake)
+TRUETrue/False: With true random sequences each number is statistically independent of other numbers in the sequence and therefore unpredictable. |          TRUE
+Techniques used for deciphering a message without any knowledge of the enciphering details is  _______ . | cryptanalysis
+The AES cipher begins and ends with a(n) _________ stage because any other stage, applied at the beginning or end, is reversible without knowledge of the key and would add no security. | AddRoundKey
+The AES key expansion algorithm takes as input a four-word (16-byte) key and produces a linear array of __________ words (176 bytes). |          44
+The Advanced Encryption Standard was published by the  __________ in 2001. | NIST
+The Blum, Blum, Shub generator is referred to as a ________ | CSPRBG
+The Diffie-Hellman key exchange formula for calculation of a secret key by User A is: | K = nA x PB 
+The GCM mode makes use of two functions: ________, which is a keyed hash function, and GCTR. | GHASH
+The Linux operating system uses _________ entropy sources for generating random numbers. | four
+The MAC function is a ________ function | many-to-one
+The National Institute of Standards and Technology chose the __________ design as the winning candidate for AES. |          Rijndael
+The Nyberg approach that is more or less a manual approach with only simple mathematics to support it is _____. | human-made
+The Secure Hash Algorithm design closely models, and is based on, the hash function __________ | MD4
+The Secure Hash Algorithm was developed by the _______  | NIST
+The _____ algorithm will work against any block encryption cipher and does not depend on any particular property of DES. | meet-in-the-middle attack
+The _____ method is ideal for a short amount of data and is the appropriate mode to use if you want to transmit a DES or AES key securely. | electronic codebook mode
+The ______ and ______ block cipher modes of operation are used for authentication. | CBC, CFB
+The ______ attack is the easiest to defend against because the opponent has the least amount of information to work with. | ciphertext-only
+The ______ indicates that the subscriber identified in the certificate has sole control and access to the private key. | Public Key Certificate
+The ______ mode operates on full blocks of plaintext and ciphertext, as opposed to an s-bit subset | OFB
+The ______ takes the ciphertext and the secret key and produces the original plaintext. It is essentially the encryption algorithm run in reverse. | decryption algorithm
+The ______ was used as the standard field system by the British Army in World War I and was used by the U.S. Army and other Allied forces during World War II. | Playfair cipher
+The _______  cryptosystem is used in some form in a number of standards including DSS and S/MIME. | ElGamal
+The _______ key exchange involves multiplying pairs of nonzero integers modulo a prime number q.  Keys are generated by exponentiation over the group with exponentiation defined as repeated multiplication | Diffie-Hellman
+The _______ protocol enables two users to establish a secret key using a public-key scheme based on discrete logarithms. | Diffie-Hellman
+The _______ scheme minimizes the message dependent amount of computation required to generate a signature. | Schnorr
+The _______ test is the most basic test of randomness and must be included in any test suite. | frequency
+The ________ is formed by taking the hash of the message and encrypting the message with the creator's private key | digital signature
+The ________ mode of operation is designed to be parallelizable so that it can provide high throughput with low cost and low latency.  | GCM
+The _________ attack is when the attacker is looking for two messages M and M1 that produce the same hash: H(M) = H(M^1) | birthday
+The _________ components of DSA  are the same as in the Schnorr signature scheme | global public key
+The _________ must be a data block that is unique to each execution of the encryption operation and may be a counter, a timestamp, or a message number. |          nonce
+The _________ transformation operates on each column individually. Each byte of a column is mapped into a new value that is a function of all four bytes in that column. |          MixColumns
+The __________ block cipher mode of operation is a general purpose block oriented transmission useful for high speed requirements. |          Counter (CTR)
+The __________ criterion is defined as: "An S-box satisfies GA of order y if, for a 1-bit input change, at least y output bits change." |          avalanche (GA)
+The __________ criterion states that any output bit j of an S-box should change with probability 1/2 when any single input bit i is inverted for all i,j. |          strict avalanche
+The __________ criterion states that output bits j and k should change independently when any single input bit i is inverted for all i, j and k. |          bit independence
+The __________ is drawn from the physical environment of the computer and could include things such as keystroke timing patterns, disk electrical activity, mouse movements, and instantaneous values of the system clock. |          entropy source
+The __________ is when a small change in plaintext or key produces a large change in the ciphertext | avalanche effect
+The __________ standard describes a method of encryption for data stored in sector-based devices where the threat model includes possible access to stored data by the adversary. Some characteristics of this standard include: the ciphertext is freely available for an attacker, the data layout is not changed on the storage medium and in transit, and the same plaintext is encrypted to different ciphertexts at different locations. |          P1619
+The appeal of ________ is that its designers have been able to prove an exact relationship between the strength of the embedded hash function and the strength of this form of authentication | HMAC
+The approach taken by the Transport Layer Security protocol and the Wireless Transport Layer Security Protocol involve invoking HMAC _______ for each block of output wi | twice
+The best that can be done to determine if a PRNG generates numbers that have the characteristic of randomness is on the basis of multiple tests.  These tests should seek to establish uniformity, scalability, and _____ | consistency
+The cipher consists of N rounds, where the number of rounds depends on the _____. | key length
+The criteria used in the design of the ______ focused on the design of the   S-boxes and on the P function that takes the output of the S-boxes. | Data Encryption Standard
+The cryptographic hash function requirement that guarantees that it is impossible to find an alternative message with the same hash value as a given message and prevents forgery when an encrypted hash code is used is the _______ | Message authentication 
+The cryptographic strength of a Feistel cipher derives from three aspects of the design: the function F, the key schedule algorithm, and __________ |          the number of rounds
+The defense against the brute-force approach for RSA is to use a large key space | T
+The digital signature approach uses an algorithm that is designed to provide only the _________  function | digital signature
+The digital signature standard is a __________ standard that uses the secure hash algorithm | NIST
+The distribution of bits in a random number sequence should be _______, therefore the frequency of occurrence of ones and zeros should be approximately equal | uniform
+The effort required for a collision resistant attack is explained by a mathematical result referred to as the _______ | less than 
+The encryption algorithm performs various transformation on the ciphertext.  | F
+The encryption round has the structure | SubBytes, ShiftRows, MixColumns, AddRoundKey
+The essential elements of any pseudorandom number generator are a __________ and a deterministic algorithm for generating a stream of pseudorandom bits. | seed value 
+The final round of both encryption and decryption of the AES structure consists of __________ stages. | three
+The first N - 1 rounds consist of four distinct transformation functions: SubBytes, ShiftRows, AddRoundKey, and __________ . |          MixColumns
+The first row of State is not altered; for the second row a 1-byte circular left shift is performed; for the third row a 2-byte circular left shift is performed; and for the fourth row a 3-byte circular left shift is performed.  This transformation is called ______ | ShiftRows
+The forward substitute byte transformation, called _________ , is a simple table lookup. |          SubBytes
+The four separate functions of the Advanced Encryption Standard are: permutation, arithmetic operations over a finite field, XOR with a key, and __________ |          byte substitution
+The function F provides the element of _____ in a Feistel cipher. | confusion
+The greater the number of rounds, the ______ it is to perform cryptanalysis. | harder
+The input to the encryption algorithm is the XOR of the next 64 bits of plaintext and the preceding 64 bits of ciphertext" is a description of __________ mode |          Cipher Black Chaining
+The key algorithmic ingredients of _________ are the AES encryption algorithm, the CTR mode of operation, and the CMAC authentication algorithm | CCM
+The key exchange protocol is vulnerable to a __________ attack because it does not authenticate the participants. | man-in-the-middle
+The key used in symmetric encryption is referred to as a _____ key | secret
+The methods of ______ conceal the existence of the message in a graphic image. | steganography
+The mix column transformation combined with the __________ transformation ensures that after a few rounds all output bits depend on all input bits. |          shift row
+The most important and widely used stream cipher is __________ . |          RC4
+The most significant characteristic of __________ is that if the same b-bit block of plaintext appears more than once in the message, it always produces the same ciphertext. |          electronic codebook mode (ECB)
+The most widely used encryption scheme is based on the __________ adopted in 1977 by the National Bureau of Standards as Federal Information Processing Standard 46. |          Data Encryption Standard (DES)
+The most widely used public-key cryptosystem is ______ | RSA
+The output of the encryption function is fed back to the shift register in Output Feedback mode, whereas in _____ the ciphertext unit is fed back to the shift register | Cipher Feedback mode
+The plaintext of a sector or data unit is organized in to blocks of 128 bits. For encryption and decryption, each block is treated independently. The only exception occurs when the last block has less than 128 bits. In that case the last two blocks are encrypted/decrypted using a ___________ technique instead of padding. |          ciphertext-stealing
+The principal object of a hash function is ______ | data integrity 
+The purpose of the __________ test is to determine whether the number of runs of ones and zeros of various lengths is as expected for a random sequence. |          runs
+The rationale behind __________ cryptanalysis is to observe the behavior of pairs of text blocks evolving along each round of the cipher instead of observing the evolution of a single text block. |          differential
+The readable message or data that is fed into the algorithm as input is the ______ | plaintext
+The requirements for encrypting stored data, also referred to as ___________ , differ somewhat from those for transmitted data. |          data at rest
+The simplest form of multiple encryption has ______ encryption stages and ____ keys. | two, two
+The simplest mode of operation is the ___________ mode, in which plaintext is handled one block at a time and each block of plaintext is encrypted using the same key. |          electronic codebook
+The standard decryption round has the structure InvShiftRows, InvSubBytes, __________, InvMixColumns. |          AddRoundKey
+The vast majority of network-based symmetric cryptographic applications  make use of _____ ciphers. | block
+There are well-defined tests for determining uniform distribution and independence to validate that a sequence of numbers is   random | T
+Three main requirements on hash functions? |  1. Strong collision resistance
+Three new versions of SHA with hash value lengths of 256, 384, and 512 bits are collectively known as ______ | SHA-2
+Timing attacks are ciphertext attacks that are only applicable to RSA | F
+To create a _______ a user calculates two quantities, r and s, that are functions of the public key components (p, q, g), the user's private key (x), the hash code of the message H(M), and an additional integer k that should be generated randomly or pseudorandomly and be unique for each signing | signature
+Transposition |  in which elements in the plaintext are rearranged.
+Triple DES makes use of __________ stages of the DES algorithm, using a total of two or three distinct keys. | three
+True/False: ) Compared to public-key ciphers such as RSA, the structure of AES and most symmetric ciphers is quite complex and cannot be explained as easily as many other cryptographic algorithms. |          TRUE
+True/False: A cryptographically secure pseudorandom bit generator is defined as one that passes the least significant bit test. |          FALSE
+True/False: A mode of operation is a technique for enhancing the effect of a cryptographic algorithm or adapting the algorithm for an application. |          TRUE
+True/False: A number of Internet based applications have adopted two-key 3DES, including PGP and S/MIME. |          FALSE
+True/False: A prime concern with DES has been its vulnerability to brute-force attack because of its relatively short key length. |          TRUE
+True/False: A problem with the ideal block cipher using a small block size is that it is vulnerable to a statistical analysis of the plaintext. |          TRUE
+True/False: A typical application of Output Feedback mode is stream oriented transmission over noisy channel, such as satellite communication. |          TRUE
+True/False: A widely used technique for pseudorandom number generation is an algorithm known as the linear congruential method. |          TRUE
+True/False: AES can be implemented very efficiently on an 8-bit processor. |          TRUE
+True/False: AES uses a Feistel structure. |          FALSE
+True/False: All other things being equal, smaller block sizes mean greater security. |          FALSE
+True/False: An advantage of key-dependent S-boxes is that because they are not fixed, it is impossible to analyze the S-boxes ahead of time to look for weaknesses. |          TRUE
+True/False: As with any block cipher, AES can be used to construct a message authentication code, and for this, only decryption is used. |          FALSE
+True/False: At each horizontal point, State is the same for both encryption and decryption. |          TRUE
+True/False: Cipher Block Chaining is a simple way to satisfy the security deficiencies of ECB. |          TRUE
+True/False: Cipher Feedback (CFB) is used for the secure transmission of single values. |          FALSE
+True/False: Cipher Feedback Mode conforms to the typical construction of a stream cipher. |          FALSE
+True/False: Confusion seeks to make the statistical relationship between the plaintext and ciphertext as complex as possible in order to thwart attempts to deduce the key. |          FALSE
+True/False: DES is a block cipher intended to replace AES for commercial applications. |          FALSE
+True/False: DES uses a 56-bit block and a 64-bit key. |          FALSE
+True/False: Examples of a pseudorandom function are decryption keys and nonces. |          FALSE
+True/False: Fast software encryption/decryption and ease of analysis are two considerations in the design of a Feistel cipher. |          TRUE
+True/False: Given the potential vulnerability of DES to a brute-force attack, an alternative has been found. |          TRUE
+True/False: Greater complexity in the subkey generation algorithm should lead to greater difficulty of cryptanalysis. |          TRUE
+True/False: If the PRF does not generate effectively random 128-bit output values it may be possible for an adversary to narrow the possibilities and successfully use a brute force attack. |          TRUE
+True/False: If the bit-stream generator is a key-controlled algorithm the two users only need to share the generating key and then each can produce the keystream. |          TRUE
+True/False: In the Advanced Encryption Standard the decryption algorithm is identical to the encryption algorithm. 39) ______ |          FALSE
+True/False: InvSubBytes is the inverse of ShiftRows. |          FALSE
+True/False: It is possible to convert a block cipher into a stream cipher using cipher feedback, output feedback and counter modes. |          TRUE
+True/False: OFB mode requires an initialization vector that must be unique to each execution of the encryption operation. |          TRUE
+True/False: Once the plaintext is converted to ciphertext using the encryption algorithm the plaintext is then used as input and the algorithm is applied again. |          FALSE
+True/False: One criteria for an S-box is: "If two inputs to an S-box differ in exactly one bit, the outputs must also differ in exactly one bit. |          FALSE
+True/False: Random numbers play an important role in the use of encryption for various network security applications. |          TRUE
+True/False: S-AES is the most widely used multiple encryption scheme. |          FALSE
+True/False: The Feistel cipher structure, based on Shannon's proposal of 1945, dates back over a quarter of a century and is the structure used by many significant symmetric block ciphers currently in use. |          TRUE
+True/False: The Rijndael developers designed the expansion key algorithm to be resistant to known cryptanalytic attacks. |          TRUE
+True/False: The S-box is designed to be resistant to known cryptanalytic attacks. |          TRUE
+True/False: The XTS-AES mode is based on the concept of a tweakable block cipher. |          TRUE
+True/False: The XTS-AES standard describes a method of decryption for data stored in sector-based devices where the threat model includes possible access to stored data by the adversary. |          FALSE
+True/False: The heart of a Feistel block cipher is the function F, which relies on the use of S-boxes. |          TRUE
+True/False: The inverse add round key transformation is identical to the forward add round key transformation because the XOR operation is its own inverse. |          TRUE
+True/False: The key schedule algorithm is more popular and has received more attention than S-box design. |          FALSE
+True/False: The longer the keyword the more difficult the cryptanalysis. |          TRUE
+True/False: The nonlinearity of the S-box is due to the use of the multiplicative inverse. |          TRUE
+True/False: The ordering of bytes within a matrix is by column. |          TRUE
+True/False: The principle requirement of random or pseudorandom number generation is that the generated number stream be unpredictable. |          TRUE
+True/False: The purpose of the Maurer's universal statistical test is to determine whether the number of ones and zeros in a sequence are approximately the same as would be expected for a truly random sequence. |          FALSE
+True/False: The security of Blum, Blum, Shub is based on the difficulty of factoring n. |          TRUE
+True/False: The seed that serves as input to the PRNG must be secure for cryptographic applications. |          TRUE
+True/False: The sender is the only one who needs to know an initialization vector. |          FALSE
+True/False: The stream cipher is similar to the one-time pad with a difference being that a one-time pad uses a pseudorandom number stream and a stream cipher uses a genuine random number stream. |          FALSE
+True/False: The strict avalanche criterion and the bit independence criterion appear to weaken the effectiveness of the confusion function. |          FALSE
+True/False: The transformations AddRoundKey and InvMixColumn alter the sequence of bytes in State. |          FALSE
+True/False: The true random number generator may simply involve conversion of an analog source to a binary output. |          TRUE
+True/False: The vast majority of network based symmetric cryptographic applications make use of stream ciphers. |          FALSE
+True/False: There are no practical cryptanalytic attacks on 3DES. |          TRUE
+True/False: There are well-defined tests for determining uniform distribution and independence to validate that a sequence of numbers is random. |          FALSE
+True/False: Three broad categories of cryptographic algorithms are commonly used to create PRNGs: symmetric block ciphers, asymmetric ciphers, and hash functions and message authentication codes. |          TRUE
+True/False: Virtually all encryption algorithms, both conventional and public-key, involve arithmetic operations on integers. |          TRUE
+Two MACs that are based on the use of a block cipher mode of operation are Data Authentication Algorithm and _______ | CMAC
+Two approaches that use a block cipher to build a PNRG and have gained widespread acceptance are: | CTR mode and OFB mode
+Two areas of concern regarding the level of security provided by DES are the nature of the algorithm and the __________ |          key size
+Two distinct requirements for a sequence of random numbers are unpredictability and __________ . |          randomness
+Two important methods of cryptanalysis are differential cryptanalysis and _________ cryptanalysis. 19) _____________ |          linear
+Two issues to consider with the computation required to use RSA are encryption/decryption and ______ | key generation 
+Two types of key exchange protocols? |  1. Key agreement
+Types of cryptalanysis attacks |  1) ciphertext only
+Typically the __________ takes as input a seed plus some context specific values such as a user ID or an application ID. |          pseudorandom function (PRF)
+Various methods of modifying a bit stream to reduce or eliminate a bias have been developed.  These are referred to as ______ algorithms | deskewing
+Verification steps CA performs before issuing a certificate |  1. Identity of subscriber (subject authentication)
+We define the ______ of an algorithm to be f(n) if, for all n and all inputs of length n the execution of the algorithm takes at most f(n) steps.  This is a common measure of the efficiency of an algorithm. | time complexity
+What are the TLS sub-protocols? |  -TLS Handshake
+What are the basic anonymity concepts? |  Want to maintain: sender and receiver anonymity, and unlinkability
+What are the main protocols involved in WPA/WPA2? |  1. EAP- transports message of "real" authentication protocols; four messages: request, response, success, and failure
+What authentication protocols are supported by WPA/WPAS? |  1. EAP-TLS: uses TLS Handshake protocol, where TLS master secret is the session key. Mandated by WPA, optional in WPA2
+What do we assume about the attacker in PRNG? |  -Goals: predict future output, compute previous (not yet observed outputs), recovers PRNG's internal state
+What does it mean that security is non-composable |  What are strong, individual cryptographic building blocks are not guaranteed to create a secure system when combined. 
+What does perfect secrecy intuitively mean? |  -Observing an encrypted message gives you no information about the original message
+What is TLS Alert Protocol? |  Displays fatal and warning error messages.
+What is TLS Change Cipher Spec Protocol? |  A single message that indicates the end of the TLS handshake; triggers state change. 
+What is TLS Handshake Protocol? |  -Negotiation of security algorithms and parameters
+What is TLS Record Protocol? |  Fragmentation, compression, message authentication and integrity protection, replay protection, confidentiality by encryption. 
+What is a side channel attack? |  Attacks based on information leaked out by the actual implementation of a crypto algroithm
+What is the Tor network? What can it be used for? |  Tor directs Internet traffic through a free, worldwide, volunteer (overlay) network to conceal a user's location and usage from anyone conducting network surveillance or traffic analysis. 
+What is the design motivation for TLS sessions and connections? |  Having connections helps to avoid expensive negotiation of new security parameters for each and every new connection within the same session. 
+What key exchange methods are supported by TLS ("know how they work" lol) |  1. RSA based
+What operations does a MIX perform and what levels of anonymity does it achieve? |  -MIX is an anonymizing proxy that changes the encoding of messages, batches incoming messages, and changes order of output
+What parts of handshake are kept when parties create a new connection within an already existing session? |  -If new connection can be created in the session, server responds with the same session_id as the existing session in Phase 1 --> proceed to finished messages
+What security serves does TLS provide? |  1. Confidentiality: symmetric key crypto for message encryption
+What should the block size of the block ciphers be? |  128 bits. 
+Why are performance issues important and how can performance be increased? |  -Some applications need fast encryption
+Why do we need block encryption modes? |  Can encrypt larger sets of plaintext data. 
+Why don't undisclosed SSIDs (32-bit ID, differentiates one WLAN from another) and MAC filtering provide real security for WiFi? |  1. SSID can be sniffed- if STA send request to AP, includes SSID of network it wishes to associate with
+Why establish a different key for each session? |  1. Ensures independence across sessions
+Why is privacy becoming a more and more important issue in our IT based society? |  Large scale information systems are becoming more common --> lots of information is stored in many databases and maintaining control of that information by individuals is difficult. 
+Why is the DH protocol used for setting up symmetric keys? |  -Unilateral entity authentication (OP knows its talking to OR but not vice versa)
+Why public key certificates? |  Scalable approach to authenticate public keys. 
+Why should certificates have an expiration date? |  -Ensures that information is kept reasonably up-to-date
+Why should the internal state of symmetric ciphers be large? |  Key stream would repeat otherwise. 
+Why should you use an existing crypto library instead of implementing your own? |  1. Implementation time
+Why types of side channel attacks exist? |  1. Cache-timing attacks on AES
+With _________ authentication an opponent would have difficulty generating ciphertext that when decrypted would have valid error control bits. | internal error control
+With a _______ attack the attacker is allowed to use the user as an "oracle".  This means that the user may request signatures of messages that depend on previously obtained message-signature pairs | adaptive chosen message
+With a _______ attack the attacker is given access to a set of messages and their signatures. | known message 
+With the use of symmetric encryption, the principal security problem is maintaining the secrecy ofthe key. | T
+Wo criteria used to validate that a sequence of numbers is random are uniform distribution and __________ . |          independence
+_____ affects the contents of bytes in State but does not alter byte sequence and does not depend on byte sequence to perform its transformation. | InvSubBytes
+_____ depend on the running time of the decryption algorithm. | Timing attacks
+_____ refer to common two-letter combinations in the English language. | Digrams
+______ are measures of the number of potential collisions for a given hash value | Preimages
+______ attacks exploit the characteristics of the algorithm to attempt to deduce a specific plaintext or to deduce the key being used. | Cryptanalytic
+______ is a mechanism or service used to verify the integrity of a message | Message authentication 
+______ is when each plaintext element or group of elements is uniquely replaced by a corresponding ciphertext element or group of elements. | Substitution
+______ mode is suitable for parallel operation.  Because there is no chaining, multiple blocks can be encrypted or decrypted simultaneously. Unlike CTR mode, this mode includes a nonce as well as a counter. | XTS-AES
+______ modes of operation have been standardized by NIST for use with symmetric block ciphers such as DES and AES. | Five
+_______ are two related keys, a public key and a private key that are used to perform complementary operations, such as encryption and decryption or signature generation and signature verification | Asymmetric keys 
+_______ can be used to develop a variety of elliptic curve cryptography schemes. | Elliptic curve arithmetic 
+_______ encryption provides authentication among those who share the secret key | Symmetric 
+_______ is an open source project for creating truly random numbers using inexpensive cameras, open source code, and inexpensive hardware. | Entropy
+________ is where the attacker forges a signature for a particular message chosen by the attacker. | Selective forgery
+_________  mode is similar to Cipher Feedback, except that the input to the encryption algorithm is the preceding DES output. | Output Feedback
+_________ makes use of elliptic curves  in which the variables and coefficients are all restricted to elements of a finite field. | Elliptic curve cryptography(ECC)
+__________ algorithms are designed specifically and solely for the purpose of generating pseudorandom bit streams. |          Purpose-built
+__________ are best for software applications | Prime curves 
+__________ is a block cipher intended to replace DES for commercial applications. It uses a 128-bit block size and a key size of 128, 192, or 256 bits. |          Advanced Encryption Standard (AES)
+__________ is a stream cipher designed in 1987 by Ron Rivest for RSA Security. |          RC4
+__________ is a technique in which an encryption algorithm is used multiple times. |          Multiple Encryption
+__________ seeks to make the relationship between the statistics of the ciphertext and the value of the encryption key as complex as possible so that even if the attacker can get some handle on the statistics of the ciphertext, the way in which the key was used to produce that ciphertext is so complex it is difficult to deduce the key. |          Confusion
+__________ techniques map plaintext elements (characters, bits) into ciphertext elements. |		Substitution 
+___________ affects the sequence of bytes in State but does not alter byte contents and does not depend on byte contents to perform its transformation. |          InvShiftRows
